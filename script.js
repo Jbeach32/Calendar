@@ -1,5 +1,8 @@
 $(document).ready(function () {
     
+    const currentDate = dayjs();
+    $("#currentDay").text(currentDate.format("dddd, MMMM D, YYYY"));
+
     function createTimeBlocks() {
       const container = $(".container-lg");
       const currentHour = dayjs().hour();
